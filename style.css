@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    background: linear-gradient(rgba(94, 11, 234, 0.744), #5e1472b3),
+    url(./Screenshot_2021-05-19-05-46-51-892_com.google.android.youtube.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: cambiar 10s ease infinite;
+}
+
+h1 {
+    font-size: 55px;
+    text-align: center;
+    padding: 39px;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    color: rgba(5, 0, 2, 0.744);
+    font-style: oblique;
+}
+section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    line-height: 39px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    padding: 15px;
+    margin-top: 18px;
+    letter-spacing: 1px;
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #4CAF50;;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: fantasy;
+    letter-spacing: 1px;
+}
+
+button:hover{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ul {
+    list-style-type: none;   
+}
+
+li {
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 20px;
+    color: white;
+    line-height: 45px;   
+}
+
+footer {
+    text-align: right;
+    font-size: 25px;
+    color: white;
+}
+
+p {
+    margin-top: 80px;
+    font-style: oblique;
+}
+
+@keyframes cambiar {
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+.hide {
+    display: none;
+    color: white;
+    width: 40%;
+    height: 10%;
+    font-size: 160%;
+    border-radius: 5px;
+    text-align: end;
+}
+
+.show {
+    display: block;
+}
+
+.link {
+    background-color: #4CAF50;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block; 
+    font-size: 16px; 
+    cursor: pointer;
+    font-family: fantasy;
+}
+
+.link-personalizado {
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(88, 8, 88);
+}
+
+Swal.fire {
+    background-color: #4CAF50;
+}
